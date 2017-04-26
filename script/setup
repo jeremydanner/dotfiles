@@ -1,7 +1,7 @@
 # Set computer name
-sudo scutil --set ComputerName "Jeremy"
-sudo scutil --set HostName "Jeremy"
-sudo scutil --set LocalHostName "Jeremy"
+sudo scutil --set ComputerName "Batman"
+sudo scutil --set HostName "Batman"
+sudo scutil --set LocalHostName "Batman"
 
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
