@@ -26,3 +26,12 @@ composer global install
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Disable the Boot Sound on Startup (Mac)
+sudo nvram SystemAudioVolume=%80
+
+# Hyper terminal
+brew cask install hyper
+
+# Caprine facebook messenger app for mac https://github.com/sindresorhus/caprine
+brew cask install caprine
