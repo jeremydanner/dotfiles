@@ -27,6 +27,10 @@ composer global install
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# Laravel valet https://laravel.com/docs/5.4/valet
+composer global require laravel/valet
+valet install
+
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
 
