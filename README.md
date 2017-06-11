@@ -14,3 +14,4 @@
 - [ ] [ImageOptim](https://imageoptim.com/mac)
 - [ ] [ImageAlpha](https://pngmini.com/)
 - [ ] [FileZilla](https://filezilla-project.org/)
+- [ ] [MAMP](https://www.mamp.info/en/downloads/)
