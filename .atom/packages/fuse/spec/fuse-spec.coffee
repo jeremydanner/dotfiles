@@ -1,0 +1,1 @@
+Fuse = require '../lib/fuse'

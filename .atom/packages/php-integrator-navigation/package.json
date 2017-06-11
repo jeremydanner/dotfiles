@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+        "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-117411-81347-1p9n9w6.dsld31sjor"
+    ]
+  ],
+  "_from": "../d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+  "_id": "php-integrator-navigation@1.1.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/php-integrator-navigation",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+    "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+  "_shasum": "7c27e63786f55880a68b978d91bf97e21badb55f",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117411-81347-1bc941z.1chpa54s4i/package.tgz",
+  "_where": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-117411-81347-1p9n9w6.dsld31sjor",
+  "bugs": {
+    "url": "https://github.com/php-integrator/atom-navigation/issues"
+  },
+  "consumedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "^2.0": "setService"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.3.1"
+  },
+  "description": "Provides code navigation and go to functionality for your PHP source code.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/php-integrator/atom-navigation#readme",
+  "keywords": [
+    "php",
+    "goto",
+    "navigation",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/Main",
+  "name": "php-integrator-navigation",
+  "optionalDependencies": {},
+  "package-deps": [
+    "hyperclick"
+  ],
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getHyperclickProvider"
+      }
+    }
+  },
+  "readme": "# php-integrator/atom-navigation\n<p align=\"right\">\n:coffee:\n<a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YKTNLZCRHMRTJ\">Send me some coffee beans</a>\n</p>\n\nThis package provides code navigation for your PHP source code using [PHP Integrator](https://github.com/php-integrator/atom-base).\n\n**Note that the [php-integrator-base](https://github.com/php-integrator/atom-base) package is required and needs to be set up correctly for this package to function correctly.**\n\n**Note that the [hyperclick](https://github.com/facebooknuclide/hyperclick) package is also required.**\n\nWhat is included?\n  * Navigate to the definition of your global PHP constants and functions.\n  * Navigate to the PHP documentation of built-in classes and functions by alt-clicking them.\n  * Navigate to the definition of classes, traits and interfaces by alt-clicking them.\n  * Navigate to the definition of class, trait and interface members by alt-clicking them.\n\nTip: You can also alt-click the names of classes, interfaces and traits inside docblocks! If an item is *navigable*, it will be underlined when moving your mouse over it while holding the alt modifier key.\n\n![GPLv3 Logo](http://gplv3.fsf.org/gplv3-127x51.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-integrator/atom-navigation.git"
+  },
+  "version": "1.1.2"
+}

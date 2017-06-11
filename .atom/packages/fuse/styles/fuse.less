@@ -1,0 +1,79 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.fuse {
+  &.view-resizer {
+    overflow: hidden;
+    cursor: default;
+    -webkit-user-select: none;
+
+    .view-resize-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 10px;
+      width: 100%;
+      cursor: ns-resize;
+      z-index: 3;
+    }
+  }
+
+  .view-scroller {
+    width: 100%;
+    overflow:auto;
+  }
+
+  .error-list-table {
+    width: 100%;
+
+    th {
+      padding: 5px;
+      font-size: 1.2em;
+    }
+
+    tr:hover {
+      background-color: @button-background-color-hover;
+    }
+
+    td {
+      padding: 5px;
+    }
+  }
+
+  .output-panel {
+    background-color: @tool-panel-background-color;
+    cursor: text;
+    -webkit-user-select: text;
+
+    p {
+			margin: 0;
+    }
+  }
+
+  .fuse-panel-heading {
+    font-size: 1.2em;
+  }
+
+  .panel-head-text {
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  .fuse-img {
+    display: inline-block;
+    vertical-align:top;
+    background-image: url('atom://fuse/styles/Fuse.png');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+
+  .fuse-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.9em;
+  }
+}

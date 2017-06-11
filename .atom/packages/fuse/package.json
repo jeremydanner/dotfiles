@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+        "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-11744-77175-1ixqsan.b0mwkoi529"
+    ]
+  ],
+  "_from": "../d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+  "_id": "fuse@0.4.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/fuse",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+    "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+  "_shasum": "153463f6ebc57698a896aa61fbd027255d0b9e4a",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-11744-77175-1u96zoe.ob9zf1dcxr/package.tgz",
+  "_where": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-11744-77175-1ixqsan.b0mwkoi529",
+  "activationCommands": {},
+  "bugs": {
+    "url": "https://github.com/fusetools/Fuse.AtomPlugin/issues"
+  },
+  "dependencies": {
+    "atom-package-dependencies": "latest",
+    "atom-space-pen-views": ">=2.1.0"
+  },
+  "description": "Fuse package for Atom (www.fusetools.com)",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/fusetools/Fuse.AtomPlugin#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/fuse",
+  "name": "fuse",
+  "optionalDependencies": {},
+  "package-dependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# Fuse\n\nAtom Editor plugin for [Fuse](https://www.fusetools.com/).\n\n## Current Features\n* Preview your app from Atom.\n* Syntax highlighting for Uno and UX.\n* Build and debug output including error list.\n* Selection of UX tags reflected in preview based on caret position.\n* Code completion in UX.\n\n![A screenshot of your package](http://i.imgur.com/pFUfiLe.gif)\n\n## Troubleshooting\nMake sure that language-fuse package is not installed or uninstall it, before using\nthis package.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusetools/Fuse.AtomPlugin.git"
+  },
+  "version": "0.4.0"
+}

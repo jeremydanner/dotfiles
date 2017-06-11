@@ -1,0 +1,32 @@
+"*":
+  "atom-package-deps":
+    ignored: []
+  core:
+    disabledPackages: [
+      "overscroll"
+      "sass-autocompile"
+      "atom-bootstrap4"
+      "language-babel"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "cobalt2-syntax"
+    ]
+  editor:
+    fontSize: 11
+    invisibles: {}
+    lineHeight: 2.5
+    scrollPastEnd: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "3b74b427-fb05-c9b7-fd5f-a3c7603358d9"
+  "linter-ui-default":
+    panelHeight: 69
+    showPanel: true
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "

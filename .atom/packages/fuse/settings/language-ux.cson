@@ -1,0 +1,4 @@
+'.text.xml.ux':
+  'editor':
+    'commentStart': '<!-- '
+    'commentEnd': ' -->'
