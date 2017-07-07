@@ -70,6 +70,8 @@ sudo nvram SystemAudioVolume=%80
 # Hyper terminal
 brew cask install hyper
 
+# Add ZSH for Hyper
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # ------------------------------------------------------------------------------
 
 # Caprine facebook messenger app for mac https://github.com/sindresorhus/caprine
