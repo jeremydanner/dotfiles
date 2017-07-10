@@ -72,6 +72,13 @@ brew cask install hyper
 
 # Add ZSH for Hyper
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Add the powerline fonts to make are terminal nice
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 # ------------------------------------------------------------------------------
 
 # Caprine facebook messenger app for mac https://github.com/sindresorhus/caprine

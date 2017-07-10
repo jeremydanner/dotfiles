@@ -1,13 +1,13 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Operator Mono", "Inconsolata for Powerline", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(255,255,255,.4)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -93,9 +93,9 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-native',
-    'hyper-snazzy',
     'hypercwd',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperterm-cobalt2-theme'
   ],
 
   // in development, you can create a directory under
