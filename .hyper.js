@@ -10,7 +10,7 @@ module.exports = {
     cursorColor: 'rgba(255,255,255,.4)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // color of the text
     foregroundColor: '#fff',
