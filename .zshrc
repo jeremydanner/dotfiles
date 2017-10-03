@@ -96,3 +96,5 @@ function code {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+export PATH=<mongodb-install-directory>/bin:$PATH
