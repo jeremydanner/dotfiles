@@ -97,4 +97,4 @@ function code {
     fi
 }
 
-export PATH=<mongodb-install-directory>/bin:$PATH
+PATH=$HOME/mongodb/bin:$PATH
