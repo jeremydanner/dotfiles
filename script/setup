@@ -81,7 +81,30 @@ cd ..
 rm -rf fonts
 # ------------------------------------------------------------------------------
 
+# Install macOS applications with Brew Cask.
+logn "Installing macOS applications:"
+cat > /tmp/Caskfile <<EOF
+  cask '1password'
+  cask 'appcleaner'
+  cask 'atom'
+  cask 'google-chrome'
+  cask 'sequel-pro'
+  cask 'skype-preview'
+  cask 'slack-beta'
+  cask 'spectacle'
+  cask 'spotify'
+EOF
+
 # Caprine facebook messenger app for mac https://github.com/sindresorhus/caprine
 brew cask install caprine
 
 # ------------------------------------------------------------------------------
+
+# Save screenshots to the downloads directory
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+
+# Turn of Siri and hide it in the menu bar
+defaults write com.apple.siri StatusMenuVisible -bool false
+defaults write com.apple.siri UserHasDeclinedEnable -bool true
+
+log 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
