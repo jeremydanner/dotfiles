@@ -1,104 +1,45 @@
-# ------------------------------------------------------------------------------
 # Set computer name
 sudo scutil --set ComputerName "Batman"
-
 sudo scutil --set HostName "Batman"
-
 sudo scutil --set LocalHostName "Batman"
-
-# ------------------------------------------------------------------------------
 
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 brew update
-
-# ------------------------------------------------------------------------------
 
 # Install the latest version of Bash.
 brew install bash
-
 sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-
 chsh -s /usr/local/bin/bash
 
-# ------------------------------------------------------------------------------
-
-# Brew installing
+# install git, node and yarn
 brew install git
-
 brew install node
-
 brew install yarn
 
 brew install homebrew/php/php71
-
 sed -i".bak" "s/^\;phar.readonly.*$/phar.readonly = Off/g" /usr/local/etc/php/7.1/php.ini
-
 sed -i "s/memory_limit = .*/memory_limit = -1/" /usr/local/etc/php/7.1/php.ini
-
 brew install homebrew/php/composer
-
 brew install homebrew/php/php-cs-fixer
-
 composer global install
 
 # https://github.com/FriendsOfPHP/PHP-CS-Fixer#globally-composer
 brew install homebrew/php/php-cs-fixer
 
-# ------------------------------------------------------------------------------
-
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
-# ------------------------------------------------------------------------------
-
-# Laravel valet https://laravel.com/docs/5.4/valet
-composer global require laravel/valet
-
-valet install
-
-# ------------------------------------------------------------------------------
-
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
 
-# ------------------------------------------------------------------------------
-
-# Hyper terminal
-brew cask install hyper
-
-# Add ZSH for Hyper
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Add the powerline fonts to make are terminal nice
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
-# ------------------------------------------------------------------------------
-
 # Install macOS applications with Brew Cask.
-logn "Installing macOS applications:"
-cat > /tmp/Caskfile <<EOF
-  cask '1password'
-  cask 'appcleaner'
-  cask 'atom'
-  cask 'google-chrome'
-  cask 'sequel-pro'
-  cask 'skype-preview'
-  cask 'slack-beta'
-  cask 'spectacle'
-  cask 'spotify'
-EOF
-
-# Caprine facebook messenger app for mac https://github.com/sindresorhus/caprine
+brew cask install hyper
+brew cask install cask '1password'
+brew cask install cask 'appcleaner'
+brew cask install cask 'atom'
+brew cask install cask 'google-chrome'
+brew cask install cask 'sequel-pro'
+brew cask install cask 'slack'
+brew cask install 'spotify'
 brew cask install caprine
-
-# ------------------------------------------------------------------------------
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
@@ -106,5 +47,23 @@ defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 # Turn of Siri and hide it in the menu bar
 defaults write com.apple.siri StatusMenuVisible -bool false
 defaults write com.apple.siri UserHasDeclinedEnable -bool true
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Laravel valet https://laravel.com/docs/5.4/valet
+composer global require laravel/valet
+valet install
+
+# Add the powerline fonts to make are terminal nice
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# Add ZSH for Hyper
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 log 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
