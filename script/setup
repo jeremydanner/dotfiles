@@ -66,4 +66,14 @@ rm -rf fonts
 # Add ZSH for Hyper
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Move your files
+cd  ~/Documents/
+mkdir github
+cd github
+git clone https://github.com/jeremydanner/dotfiles.git
+cp -r .atom ~/
+cp .bash_profile ~/
+cp .bashrc ~/
+cp .hyper.js ~/
+cp .zshrc ~/
 log 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
