@@ -2,40 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
+        "raw": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
-        "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
+        "rawSpec": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
+        "spec": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-117417-25418-upo1v.74o5kzw7b9"
+      "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/apm-install-dir-117921-23834-wdu0ly.aez6ijatt9"
     ]
   ],
-  "_from": "../d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
-  "_id": "go-plus@5.5.5",
+  "_from": "../d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
+  "_id": "go-plus@5.6.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/go-plus",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
+    "raw": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
-    "spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
+    "rawSpec": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
+    "spec": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
-  "_shasum": "ed4eed4d0c4084e26eb415ab5aaf94769f32f71a",
+  "_resolved": "file:../d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
+  "_shasum": "dcee6df64dd8fd16c2605154e4d249613fa8c182",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/d-117417-25418-r5evvo.lmvg3nmi/package.tgz",
-  "_where": "/private/var/folders/m9/nc8tvn7j5d5bxqgrk6v66xp80000gn/T/apm-install-dir-117417-25418-upo1v.74o5kzw7b9",
+  "_spec": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/d-117921-23834-1kcg4ej.tz3wka9k9/package.tgz",
+  "_where": "/private/var/folders/6f/wy4388p50b9bsgv43j2k71380000gn/T/apm-install-dir-117921-23834-wdu0ly.aez6ijatt9",
   "activationCommands": {
     "atom-workspace": [
       "golang:get-package",
@@ -88,65 +87,19 @@
           ],
           "order": 1
         },
-        "orientation": {
-          "title": "Panel Orientation",
-          "description": "Dock the panel to the bottom or right of the window",
-          "type": "string",
-          "default": "horizontal",
-          "enum": [
-            "horizontal",
-            "vertical"
-          ],
-          "order": 2
-        },
         "focusOnFailure": {
           "title": "Focus the go-plus panel on failure ",
           "description": "If the panel is hidden, or the panel is showing a different tab, the panel will be expanded and the output tab focused when a failure occurs.",
           "type": "boolean",
           "default": true,
-          "order": 3
+          "order": 2
         },
         "fontSize": {
           "title": "Panel Font Size",
           "description": "Control the font size for content displayed in the panel",
           "type": "string",
           "default": "1.2em",
-          "order": 4
-        },
-        "maxHeight": {
-          "title": "Maximum Panel Height",
-          "description": "When the panel orientation is horizontal, prevent the panel from occupying the entire window",
-          "type": "string",
-          "default": "50vh",
-          "order": 5
-        },
-        "minHeight": {
-          "title": "Minimum Panel Width",
-          "description": "When the panel orientation is vertical, ensure the panel doesn't disappear when open",
-          "type": "string",
-          "default": "10vw",
-          "order": 6
-        },
-        "currentHeight": {
-          "title": "Current Panel Height",
-          "description": "When the panel orientation is horizontal, the height of the panel (this is changed when you drag the panel to resize it, so the setting is preserved)",
-          "type": "string",
-          "default": "15vh",
-          "order": 7
-        },
-        "maxWidth": {
-          "title": "Maximum Panel Width",
-          "description": "When the panel orientation is vertical, prevent the panel from occupying the entire window",
-          "type": "string",
-          "default": "50vw",
-          "order": 8
-        },
-        "currentWidth": {
-          "title": "Current Panel Width",
-          "description": "When the panel orientation is vertical, the width of the panel (this is changed when you drag the panel to resize it, so the setting is preserved)",
-          "type": "string",
-          "default": "15vw",
-          "order": 9
+          "order": 3
         }
       }
     },
@@ -434,10 +387,12 @@
   },
   "dependencies": {
     "ansi-style-parser": "^1.1.0",
-    "etch": "0.12.4",
+    "etch": "0.12.6",
     "etch-octicon": "^1.0.0",
-    "fs-extra": "^3.0.0",
+    "fs-extra": "^4.0.2",
+    "fuzzaldrin-plus": "^0.5.0",
     "lodash": "^4.17.4",
+    "resize-observer-polyfill": "^1.4.2",
     "semver": "^5.3.0",
     "temp": "^0.8.3"
   },
@@ -510,5 +465,5 @@
       "waitsForPromise"
     ]
   },
-  "version": "5.5.5"
+  "version": "5.6.0"
 }

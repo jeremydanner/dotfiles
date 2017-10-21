@@ -3,10 +3,8 @@
     ignored: []
   core:
     disabledPackages: [
-      "overscroll"
       "sass-autocompile"
-      "atom-bootstrap4"
-      "language-babel"
+      "fuse"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -24,6 +22,14 @@
   "linter-ui-default":
     panelHeight: 69
     showPanel: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierOptions:
+      jsxBracketSameLine: true
+      singleQuote: true
+    useEslint: true
   welcome:
     showOnStartup: false
 ".blade.html.php.text":

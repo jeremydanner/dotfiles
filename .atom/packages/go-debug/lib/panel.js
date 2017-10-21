@@ -14,7 +14,7 @@ import { GoroutinesContainer } from './goroutines'
 import { VariablesContainer } from './variables'
 import { WatchExpressionsContainer } from './watch-expressions'
 
-import { elementPropInHierarcy } from './utils'
+import { getEditor, elementPropInHierarcy } from './utils'
 
 export class Panel extends EtchComponent {
   constructor (props, children) {
@@ -87,6 +87,7 @@ export class Panel extends EtchComponent {
       {this.renderCommand('stepIn', 'arrow-down', 'Step in')}
       {this.renderCommand('stepOut', 'arrow-up', 'Step out')}
       {this.renderCommand('stop', 'primitive-square', 'Stop')}
+      {this.renderCommand('restart', 'sync', 'Restart')}
     </div>
   }
   renderCommand (cmd, icon, title) {
@@ -138,7 +139,7 @@ export class Panel extends EtchComponent {
       (v, c) => (c && c.configs.find(({ name }) => name === selectedConfig)) || v,
       null
     )
-    const editor = atom.workspace.getActiveTextEditor()
+    const editor = getEditor()
     const file = editor && editor.getPath()
     this.props.dbg.start(config, file)
   }

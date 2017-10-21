@@ -1,7 +1,7 @@
 'use babel'
 
 import { CompositeDisposable } from 'atom'
-import { debounce } from './utils'
+import { debounce, openFile, isValidEditor } from './utils'
 import Editor from './editor'
 
 export default class EditorManager {
@@ -72,14 +72,10 @@ export default class EditorManager {
 
     // open the file
     const line = stack.line
-    atom.workspace.open(stack.file, { initialLine: line, searchAllPanes: true }).then(() => {
+    openFile(stack.file, line).then((editor) => {
       // create a new marker
-      const editor = atom.workspace.getActiveTextEditor()
       this._lineMarker = editor.markBufferPosition({ row: line })
       editor.decorateMarker(this._lineMarker, { type: 'line', class: 'go-debug-line' })
-
-      // center the line
-      editor.scrollToBufferPosition([line, 0], { center: true })
     })
   }
 
@@ -99,13 +95,7 @@ export default class EditorManager {
   }
 
   updateEditor (editor) {
-    const file = editor.getPath()
-    if (!file) {
-      return null // ignore "new tabs", "settings", etc
-    }
-
-    const grammar = editor.getGrammar()
-    if (grammar.scopeName !== 'source.go') {
+    if (!isValidEditor(editor)) {
       return null
     }
 

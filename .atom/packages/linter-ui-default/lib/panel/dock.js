@@ -3,6 +3,10 @@
 import { CompositeDisposable } from 'atom'
 import { WORKSPACE_URI } from '../helpers'
 
+let React
+let ReactDOM
+let Component
+
 class PanelDock {
   element: HTMLElement;
   subscriptions: CompositeDisposable;
@@ -14,15 +18,21 @@ class PanelDock {
       const paneContainer = atom.workspace.paneContainerForItem(this)
       // NOTE: This is an internal API access
       // It's necessary because there's no Public API for it yet
-      if (paneContainer && typeof paneContainer.state.size === 'number' && typeof paneContainer.render === 'function') {
+      if (paneContainer && typeof paneContainer.state === 'object' && typeof paneContainer.state.size === 'number' && typeof paneContainer.render === 'function') {
         paneContainer.state.size = panelHeight
         paneContainer.render(paneContainer.state)
       }
     }))
 
-    const React = require('react')
-    const ReactDOM = require('react-dom')
-    const Component = require('./component')
+    if (!React) {
+      React = require('react')
+    }
+    if (!ReactDOM) {
+      ReactDOM = require('react-dom')
+    }
+    if (!Component) {
+      Component = require('./component')
+    }
 
     ReactDOM.render(<Component delegate={delegate} />, this.element)
   }
@@ -42,17 +52,12 @@ class PanelDock {
     return atom.config.get('linter-ui-default.panelHeight')
   }
   dispose() {
-    const parentElement = this.element.parentElement
-    if (parentElement) {
-      const { height } = parentElement.getBoundingClientRect()
-      if (height > 0) {
-        atom.config.set('linter-ui-default.panelHeight', height)
-      }
-    }
-
     this.subscriptions.dispose()
     const paneContainer = atom.workspace.paneContainerForItem(this)
     if (paneContainer) {
+      if (typeof paneContainer.state === 'object' && typeof paneContainer.state.size === 'number') {
+        atom.config.set('linter-ui-default.panelHeight', paneContainer.state.size)
+      }
       paneContainer.paneForItem(this).destroyItem(this, true)
     }
   }

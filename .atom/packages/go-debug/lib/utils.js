@@ -89,3 +89,35 @@ export function editorStyle () {
   }
   return style
 }
+
+export function getEditor () {
+  return atom.workspace.getActiveTextEditor() || atom.workspace.getCenter().getActiveTextEditor()
+}
+
+export function openFile (file, line, column) {
+  return atom.workspace.open(file, { initialLine: line, searchAllPanes: true }).then((editor) => {
+    editor.scrollToBufferPosition([line, column], { center: true })
+    return editor
+  })
+}
+
+export function isValidEditor (e) {
+  if (!e || !e.getGrammar) {
+    return false
+  }
+  const grammar = e.getGrammar()
+  if (!grammar) {
+    return false
+  }
+  return grammar.scopeName === 'source.go'
+}
+
+export function saveAllEditors () {
+  const promises = []
+  for (const editor of atom.workspace.getTextEditors()) {
+    if (editor.isModified() && isValidEditor(editor)) {
+      promises.push(editor.save())
+    }
+  }
+  return Promise.all(promises)
+}

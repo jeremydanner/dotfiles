@@ -1,10 +1,47 @@
-# Change Log
+# Changelog
 All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.36.0] - 2017-09-22
+### Added
+- New directive: `includeFirst`.
+
+## [0.35.0] - 2017-09-18
+### Added
+- New snippets: `isset`, `verbatim`, `empty`, `continue`, `break`, `includeif`, `inject`, `can`, `cannot`, `auth` and `guest`.
+- New directive: `json`.
+
 ### Changed
-- Nothing
+- Snippets file has been reworked.
+- Descriptions for existing snippets with URL-s pointing to appropriate documentation.
+- Sync with [language-php 0.42.0](https://github.com/atom/language-php/compare/v0.40.0...v0.42.0#diff-9972c3dda8fb0e2f637ca073c25e7e6d)
+
+## [0.34.0] - 2017-07-20
+### Added
+- New directives: `@guest` and `@endguest`
+
+## [0.33.0] - 2017-07-17
+### Added
+- New directives: `@auth` and `@endauth`
+
+### Changed
+- Sync with [language-php 0.40.0](https://github.com/atom/language-php/compare/e1290265f3d68316347e0ab2665686016b4b24b7...v0.40.0#diff-9972c3dda8fb0e2f637ca073c25e7e6d)
+
+## [0.32.0] - 2017-06-25
+### Added
+- New directives: `@switch`, `@endswitch`, `@case` and `@default`
+
+### Changed
+- Sync with [language-php e1290265f3d68316347e0ab2665686016b4b24b7](https://github.com/atom/language-php/compare/9035d97d18b2b172c317d76bf535113e41664111...e1290265f3d68316347e0ab2665686016b4b24b7#diff-9972c3dda8fb0e2f637ca073c25e7e6d)
+
+## [0.31.0] - 2017-06-10
+### Changed
+- PHP code in directives is now bracket-balanced
+- Sync with [language-php 9035d97d18b2b172c317d76bf535113e41664111](https://github.com/atom/language-php/compare/b00790432f19fdb08d25989973f66cbf7f7a3eac...9035d97d18b2b172c317d76bf535113e41664111#diff-9972c3dda8fb0e2f637ca073c25e7e6d)
 
 ## [0.30.0] - 2017-05-04
 ### Added
@@ -158,7 +195,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Complete rewrite of the grammar with PHP parts based on language-php 0.22.0
 
-[Unreleased]: https://github.com/jawee/language-blade/compare/v0.30.0...HEAD
+[Unreleased]: https://github.com/jawee/language-blade/compare/v0.36.0...HEAD
+[0.36.0]: https://github.com/jawee/language-blade/compare/v0.35.0...v0.36.0
+[0.35.0]: https://github.com/jawee/language-blade/compare/v0.34.0...v0.35.0
+[0.34.0]: https://github.com/jawee/language-blade/compare/v0.33.0...v0.34.0
+[0.33.0]: https://github.com/jawee/language-blade/compare/v0.32.0...v0.33.0
+[0.32.0]: https://github.com/jawee/language-blade/compare/v0.31.0...v0.32.0
+[0.31.0]: https://github.com/jawee/language-blade/compare/v0.30.0...v0.31.0
 [0.30.0]: https://github.com/jawee/language-blade/compare/v0.29.0...v0.30.0
 [0.29.0]: https://github.com/jawee/language-blade/compare/v0.28.1...v0.29.0
 [0.28.1]: https://github.com/jawee/language-blade/compare/v0.28.0...v0.28.1
