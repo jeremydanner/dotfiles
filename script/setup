@@ -31,15 +31,16 @@ brew install homebrew/php/php-cs-fixer
 sudo nvram SystemAudioVolume=%80
 
 # Install macOS applications with Brew Cask.
-brew cask install hyper
-brew cask install cask '1password'
-brew cask install cask 'appcleaner'
-brew cask install cask 'atom'
-brew cask install cask 'google-chrome'
-brew cask install cask 'sequel-pro'
-brew cask install cask 'slack'
+brew cask install 'hyper'
+brew cask install '1password'
+brew cask install 'appcleaner'
+brew cask install 'atom'
+brew cask install 'phpstorm'
+brew cask install 'google-chrome'
+brew cask install 'sequel-pro'
+brew cask install 'slack'
 brew cask install 'spotify'
-brew cask install caprine
+brew cask install 'caprine'
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
