@@ -1,4 +1,0 @@
-* text=auto
-*.js text eol=lf
-flow-typed/npm/* linguist-generated
-dist/* linguist-generated

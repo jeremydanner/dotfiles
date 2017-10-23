@@ -1,5 +1,0 @@
-root = true
-
-[*.{coffee,cson}]
-indent_style = space
-indent_size = 2
