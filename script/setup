@@ -72,7 +72,7 @@ cd  ~/Documents/
 mkdir github
 cd github
 git clone https://github.com/jeremydanner/dotfiles.git
-cp -r .atom ~/
+cd dotfiles
 cp .bash_profile ~/
 cp .bashrc ~/
 cp .hyper.js ~/
