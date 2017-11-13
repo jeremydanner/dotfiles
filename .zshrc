@@ -102,3 +102,7 @@ PATH=$HOME/mongodb/bin:$PATH
 
 
 export PATH="/usr/local/bin:$PATH"
+
+
+PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:${PATH}"
+export PATH
