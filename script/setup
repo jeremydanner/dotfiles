@@ -16,6 +16,7 @@ chsh -s /usr/local/bin/bash
 brew install git
 brew install node
 brew install yarn
+brew install ssh-copy-id
 
 brew install homebrew/php/php71
 sed -i".bak" "s/^\;phar.readonly.*$/phar.readonly = Off/g" /usr/local/etc/php/7.1/php.ini
@@ -41,7 +42,11 @@ brew cask install 'sequel-pro'
 brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'caprine'
-brew cask install 'tunnelbear'
+brew cask install 'appcleaner'
+brew cask install 'firefox'
+brew cask install 'mysqlworkbench'
+brew cask install 'android-studio'
+
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
