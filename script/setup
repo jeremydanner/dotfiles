@@ -41,6 +41,7 @@ brew cask install 'sequel-pro'
 brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'caprine'
+brew cask install 'tunnelbear'
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
