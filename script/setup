@@ -46,7 +46,7 @@ brew cask install 'appcleaner'
 brew cask install 'firefox'
 brew cask install 'mysqlworkbench'
 brew cask install 'android-studio'
-
+brew cask install 'phpstorm'
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
