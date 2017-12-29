@@ -74,9 +74,8 @@ rm -rf fonts
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Move your files
-cd  ~/Documents/
-mkdir github
-cd github
+mkdir ~/Code
+cd Code
 git clone https://github.com/jeremydanner/dotfiles.git
 cd dotfiles
 cp .bash_profile ~/
