@@ -106,3 +106,5 @@ export PATH="/usr/local/bin:$PATH"
 
 PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:${PATH}"
 export PATH
+
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
