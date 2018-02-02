@@ -35,7 +35,7 @@ sudo nvram SystemAudioVolume=%80
 brew cask install 'hyper'
 brew cask install '1password'
 brew cask install 'appcleaner'
-brew cask install 'visual-studio-code'
+brew cask install 'atom'
 brew cask install 'phpstorm'
 brew cask install 'google-chrome'
 brew cask install 'sequel-pro'
