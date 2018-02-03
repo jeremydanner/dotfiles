@@ -46,6 +46,7 @@ brew cask install 'caprine'
 brew cask install 'firefox'
 brew cask install 'mysqlworkbench'
 brew cask install 'android-studio'
+brew cask install 'microsoft-teams'
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
@@ -57,10 +58,6 @@ defaults write com.apple.siri UserHasDeclinedEnable -bool true
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
-# Laravel valet https://laravel.com/docs/5.4/valet
-composer global require laravel/valet
-valet install
 
 # Add the powerline fonts to make are terminal nice
 git clone https://github.com/powerline/fonts.git
@@ -81,4 +78,10 @@ cp .bash_profile ~/
 cp .bashrc ~/
 cp .hyper.js ~/
 cp .zshrc ~/
+
+
+# Laravel valet https://laravel.com/docs/5.4/valet
+composer global require laravel/valet
+valet install
+
 log 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
