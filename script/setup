@@ -47,6 +47,7 @@ brew cask install 'firefox'
 brew cask install 'mysqlworkbench'
 brew cask install 'android-studio'
 brew cask install 'microsoft-teams'
+brew cask install 'postman'
 
 # Save screenshots to the downloads directory
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
