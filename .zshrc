@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jeremy/.oh-my-zsh
+export ZSH=/Users/jeremydanner/.oh-my-zsh/
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -85,17 +85,6 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/.composer/vendor/bin:/usr/local/sbin:$PATH
 
-# Add Visual Studio Code (code)
-function code {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Visual Studio Code" "$argPath"
-    fi
-}
 
 PATH=$HOME/mongodb/bin:$PATH
 
@@ -107,4 +96,4 @@ export PATH="/usr/local/bin:$PATH"
 PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:${PATH}"
 export PATH
 
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php72)/bin:$PATH"
