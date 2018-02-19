@@ -58,6 +58,12 @@ defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 defaults write com.apple.siri StatusMenuVisible -bool false
 defaults write com.apple.siri UserHasDeclinedEnable -bool true
 
+# Menu bar: Always show percentage next to the Battery icon
+defaults write com.apple.menuextra.battery ShowPercent YES
+
+# Set the icon size of Dock items to 60 pixels
+defaults write com.apple.dock tilesize -int 60
+
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
