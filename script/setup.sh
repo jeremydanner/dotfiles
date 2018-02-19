@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Set computer name
 sudo scutil --set ComputerName "Batman"
 sudo scutil --set HostName "Batman"
