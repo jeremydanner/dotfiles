@@ -10,16 +10,16 @@ module.exports = {
     cursorColor: 'rgba(255,255,255,.4)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'UNDERLINE',
+    cursorShape: 'BEAM',
 
     // color of the text
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#000',
+    backgroundColor: '#0d3a58',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#0d3a58',
 
     // custom css to embed in the main window
     css: '',
@@ -36,6 +36,9 @@ module.exports = {
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
     // default: `true` on windows and Linux (ignored on macOS)
     showWindowControls: '',
+
+    // omit or set true to show. set false to remove it
+    wickedBorder: false,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -92,10 +95,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-native',
+    'hyperterm-cobalt2-theme',
     'hypercwd',
-    'hyperlinks',
-    'hyperterm-cobalt2-theme'
+    'hyperlinks'
   ],
 
   // in development, you can create a directory under
