@@ -19,7 +19,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -96,4 +96,3 @@ export PATH="/usr/local/bin:$PATH"
 PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:${PATH}"
 export PATH
 
-export PATH="$(brew --prefix homebrew/php/php72)/bin:$PATH"
