@@ -97,7 +97,8 @@ module.exports = {
   plugins: [
     'hyperterm-cobalt2-theme',
     'hypercwd',
-    'hyperlinks'
+    'hyperlinks',
+    'gitrocket'
   ],
 
   // in development, you can create a directory under
