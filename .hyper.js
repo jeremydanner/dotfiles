@@ -15,6 +15,7 @@ module.exports = {
     // color of the text
     foregroundColor: '#fff',
 
+
     // terminal background color
     backgroundColor: '#0d3a58',
 
