@@ -15,7 +15,6 @@ module.exports = {
     // color of the text
     foregroundColor: '#fff',
 
-
     // terminal background color
     backgroundColor: '#0d3a58',
 
@@ -99,7 +98,8 @@ module.exports = {
     'hyperterm-cobalt2-theme',
     'hypercwd',
     'hyperlinks',
-    'gitrocket'
+    'gitrocket',
+    'hyperterm-1password'
   ],
 
   // in development, you can create a directory under
