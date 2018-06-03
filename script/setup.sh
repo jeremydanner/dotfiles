@@ -59,8 +59,7 @@ defaults write com.apple.siri StatusMenuVisible -bool false
 defaults write com.apple.siri UserHasDeclinedEnable -bool true
 
 # Add login screen message.
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText
-	"Found this computer? Please contact Jeremy Danner at jeremydanner2@gmail.com"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact Jeremy Danner at jeremydanner2@gmail.com"
 
 # Menu bar: Always show percentage next to the Battery icon
 defaults write com.apple.menuextra.battery ShowPercent YES
