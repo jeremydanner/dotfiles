@@ -101,4 +101,4 @@ echo installing Laravel valet
 composer global require laravel/valet
 valet install
 
-log 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
+echo 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
