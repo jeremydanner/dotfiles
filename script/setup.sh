@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Set sudo for setup
+echo Setting sudo
+sudo -s
+
 # Set computer name
 echo Set computer name?
 read computerName
