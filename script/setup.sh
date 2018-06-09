@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Set sudo for setup
+echo Setting sudo
+sudo -s
+
 # Set computer name
 echo Set computer name?
 read computerName
@@ -26,12 +30,11 @@ brew install node
 brew install yarn
 brew install ssh-copy-id
 
-brew install homebrew/php/php72
+brew install php
 sed -i".bak" "s/^\;phar.readonly.*$/phar.readonly = Off/g" /usr/local/etc/php/7.2/php.ini
 sed -i "s/memory_limit = .*/memory_limit = -1/" /usr/local/etc/php/7.2/php.ini
 
-brew install homebrew/php/composer
-brew install homebrew/php/php-cs-fixer
+brew install composer
 composer global install
 
 
