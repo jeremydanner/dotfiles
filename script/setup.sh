@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Set sudo for setup
-echo Setting sudo
-sudo -s
-
 # Set computer name
 echo Set computer name?
 read computerName
@@ -30,17 +26,10 @@ brew install node
 brew install yarn
 brew install ssh-copy-id
 
+
 brew install php
 sed -i".bak" "s/^\;phar.readonly.*$/phar.readonly = Off/g" /usr/local/etc/php/7.2/php.ini
 sed -i "s/memory_limit = .*/memory_limit = -1/" /usr/local/etc/php/7.2/php.ini
-
-# Install composer 
-echo Intalling composer 
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-
 
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
@@ -58,7 +47,6 @@ brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'caprine'
 brew cask install 'firefox'
-brew cask install 'mysqlworkbench'
 brew cask install 'android-studio'
 brew cask install 'microsoft-teams'
 brew cask install 'postman'
@@ -77,8 +65,8 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "
 # Menu bar: Always show percentage next to the Battery icon
 defaults write com.apple.menuextra.battery ShowPercent YES
 
-# Set the icon size of Dock items to 60 pixels
-defaults write com.apple.dock tilesize -int 60
+# Set the icon size of Dock items to 30 pixels
+defaults write com.apple.dock tilesize -int 30
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
@@ -101,13 +89,5 @@ cp ~/Code/dotfiles/.bash_profile ~/
 cp ~/Code/dotfiles/.bashrc ~/
 cp ~/Code/dotfiles/.hyper.js ~/
 cp ~/Code/dotfiles/.zshrc ~/
-
-# Make composer global
-mv ~/composer.phar /usr/local/bin/composer
-
-# Laravel valet https://laravel.com/docs/5.4/valet
-echo installing Laravel valet
-composer global require laravel/valet
-valet install
 
 echo 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
