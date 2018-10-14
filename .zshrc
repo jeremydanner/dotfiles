@@ -96,3 +96,7 @@ export PATH="/usr/local/bin:$PATH"
 PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:${PATH}"
 export PATH
 
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# alias for updating home brew taps and casks
+alias update='~/Code/dotfiles/script/update.sh'
