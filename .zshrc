@@ -101,3 +101,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # alias for updating home brew taps and casks
 alias update='~/Code/dotfiles/script/update.sh'
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+
+# alias
+alias git-gone="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"

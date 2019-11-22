@@ -25,11 +25,7 @@ brew install git
 brew install node
 brew install yarn
 brew install ssh-copy-id
-
-
 brew install php
-sed -i".bak" "s/^\;phar.readonly.*$/phar.readonly = Off/g" /usr/local/etc/php/7.2/php.ini
-sed -i "s/memory_limit = .*/memory_limit = -1/" /usr/local/etc/php/7.2/php.ini
 
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
@@ -47,9 +43,10 @@ brew cask install 'slack'
 brew cask install 'spotify'
 brew cask install 'caprine'
 brew cask install 'firefox'
-brew cask install 'android-studio'
 brew cask install 'microsoft-teams'
 brew cask install 'postman'
+brew cask install 'notable'
+brew cask install 'poedit'
 
 echo Setting up system defaults
 # Save screenshots to the downloads directory
@@ -60,7 +57,7 @@ defaults write com.apple.siri StatusMenuVisible -bool false
 defaults write com.apple.siri UserHasDeclinedEnable -bool true
 
 # Add login screen message.
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact Jeremy Danner at jeremydanner2@gmail.com"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact Elicit AB at jeremy.danner@elicit.se or jeremydanner2@gmail.com"
 
 # Menu bar: Always show percentage next to the Battery icon
 defaults write com.apple.menuextra.battery ShowPercent YES
