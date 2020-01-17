@@ -8,6 +8,9 @@ sudo scutil --set HostName $computerName
 sudo scutil --set LocalHostName $computerName
 echo Your computer name is $computerName
 
+# To allow apps downloaded from Anywhere (Hardcore mode)
+sudo spctl --master-disable 
+
 # Install homebrew
 echo Installing homebrew...
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
