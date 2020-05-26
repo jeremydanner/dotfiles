@@ -9,5 +9,8 @@ brew upgrade
 echo Updating Casks
 brew cask upgrade
 
+echo Cleaning
+brew cleanup
+
 brew doctor
 echo Computer up to date
