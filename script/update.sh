@@ -7,7 +7,7 @@ echo Updating Taps
 brew upgrade
 
 echo Updating Casks
-brew cask upgrade
+brew upgrade --cask 
 
 echo Cleaning
 brew cleanup
