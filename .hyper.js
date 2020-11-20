@@ -99,8 +99,17 @@ module.exports = {
     'hypercwd',
     'hyperlinks',
     'gitrocket',
-    'hyperterm-1password'
+    'hyperline'
   ],
+
+  hyperline: {
+    plugins: [
+      "ip",
+      "cpu",
+      "spotify",
+      "Docker"
+    ]
+  },
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
