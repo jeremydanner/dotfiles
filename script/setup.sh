@@ -9,7 +9,7 @@ sudo scutil --set LocalHostName $computerName
 echo Your computer name is $computerName
 
 # To allow apps downloaded from Anywhere (Hardcore mode)
-sudo spctl --master-disable 
+sudo spctl --master-disable
 
 # Install homebrew
 echo Installing homebrew...
@@ -23,12 +23,11 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 chsh -s /usr/local/bin/bash
 
 # install git, node and yarn
-echo install git, node, yarn and PHP
+echo install git, node & yarn
 brew install git
 brew install node
 brew install yarn
 brew install ssh-copy-id
-brew install php
 
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
@@ -50,6 +49,7 @@ brew cask install 'microsoft-teams'
 brew cask install 'postman'
 brew cask install 'notable'
 brew cask install 'poedit'
+brew cask install 'docker'
 
 echo Setting up system defaults
 # Save screenshots to the downloads directory
