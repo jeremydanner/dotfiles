@@ -77,7 +77,7 @@ module.exports = {
     env: {},
 
     // set to false for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false
@@ -98,21 +98,18 @@ module.exports = {
     'hyperterm-cobalt2-theme',
     'hypercwd',
     'hyperlinks',
-    'gitrocket',
-    'hyperline'
+    'gitrocket'
   ],
-
-  hyperline: {
-    plugins: [
-      "ip",
-      "cpu",
-      "spotify",
-      "Docker"
-    ]
-  },
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: []
 };
+
+
+
+
+
+
+
