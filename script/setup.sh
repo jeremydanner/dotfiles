@@ -34,22 +34,20 @@ sudo nvram SystemAudioVolume=%80
 
 # Install macOS applications with Brew Cask.
 echo Install macOS applications with Brew Cask
-brew cask install 'hyper'
-brew cask install '1password'
-brew cask install 'appcleaner'
-brew cask install 'atom'
-brew cask install 'phpstorm'
-brew cask install 'google-chrome'
-brew cask install 'sequel-pro'
-brew cask install 'slack'
-brew cask install 'spotify'
-brew cask install 'caprine'
-brew cask install 'firefox'
-brew cask install 'microsoft-teams'
-brew cask install 'postman'
-brew cask install 'notable'
-brew cask install 'poedit'
-brew cask install 'docker'
+brew install --cask 'hyper'
+brew install --cask '1password'
+brew install --cask 'appcleaner'
+brew install --cask 'visual-studio-code'
+brew install --cask 'phpstorm'
+brew install --cask 'google-chrome'
+brew install --cask 'sequel-pro'
+brew install --cask 'spotify'
+brew install --cask 'firefox'
+brew install --cask 'microsoft-teams'
+brew install --cask 'postman'
+brew install --cask 'poedit'
+brew install --cask 'docker'
+brew install --cask 'discord'
 
 echo Setting up system defaults
 # Save screenshots to the downloads directory
