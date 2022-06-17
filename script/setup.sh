@@ -71,6 +71,8 @@ cd fonts
 cd ..
 rm -rf fonts
 
+
+
 # Add oh-my-zsh for Hyper
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
