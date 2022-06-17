@@ -16,18 +16,11 @@ echo Installing homebrew...
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
-# Install the latest version of Bash.
-echo Installing the latest version of Bash...
-brew install bash
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-chsh -s /usr/local/bin/bash
-
 # install git, node and yarn
 echo install git, node & yarn
 brew install git
 brew install node
 brew install yarn
-brew install ssh-copy-id
 
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
@@ -78,14 +71,7 @@ cd fonts
 cd ..
 rm -rf fonts
 
-# Add ZSH for Hyper
+# Add oh-my-zsh for Hyper
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Move your files
-echo moving bash files to the root
-cp ~/Code/dotfiles/.bash_profile ~/
-cp ~/Code/dotfiles/.bashrc ~/
-cp ~/Code/dotfiles/.hyper.js ~/
-cp ~/Code/dotfiles/.zshrc ~/
 
 echo 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
