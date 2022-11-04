@@ -22,6 +22,9 @@ brew install git
 brew install node
 brew install yarn
 
+# Move files and folders to the trash https://www.npmjs.com/package/trash-cli
+npm install --global trash-cli
+
 # Disable the Boot Sound on Startup (Mac)
 sudo nvram SystemAudioVolume=%80
 
