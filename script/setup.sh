@@ -21,6 +21,7 @@ echo install git, node & yarn
 brew install git
 brew install node
 brew install yarn
+brew install 'lazygit'
 
 # Move files and folders to the trash https://www.npmjs.com/package/trash-cli
 npm install --global trash-cli
@@ -79,4 +80,4 @@ rm -rf fonts
 # Add oh-my-zsh for Hyper
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo 'Finished! Please reboot! Install additional software with `brew install` and `brew cask install`.'
+echo 'Finished! Please reboot! Install additional software with `brew install`.'

@@ -105,3 +105,6 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # alias
 alias git-gone="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
+
+# alias for opening lazygit app
+alias log="lazygit"
