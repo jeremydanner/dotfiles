@@ -57,8 +57,6 @@ defaults write com.apple.siri UserHasDeclinedEnable -bool true
 # Add login screen message.
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact Elicit AB at jeremy.danner@elicit.se or jeremydanner2@gmail.com"
 
-# Menu bar: Always show percentage next to the Battery icon
-defaults write com.apple.menuextra.battery ShowPercent YES
 
 # Set the icon size of Dock items to 30 pixels
 defaults write com.apple.dock tilesize -int 30
@@ -74,7 +72,6 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
-
 
 
 # Add oh-my-zsh for Hyper
