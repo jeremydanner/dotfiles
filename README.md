@@ -14,6 +14,7 @@ cd dotfiles
 ~/Code/dotfiles/script/update.sh
 ```
 Add an alias to your `~/.zshrc` file 
+
 ``` 
 # alias for updating home brew taps and casks
 alias update='~/Code/dotfiles/script/update.sh'
